@@ -34,6 +34,24 @@
             position: relative;
             z-index: 1; /* Asegura que el contenido esté encima del fondo */
         }
+         @media (max-width: 600px) {
+            img {
+                width: 90%; /* Las imágenes ocuparán el 90% del ancho de la pantalla */
+                max-width: none; /* Elimina el límite máximo del ancho */
+            }
+
+            body {
+                background-size: cover; /* Hace que el fondo cubra toda la pantalla sin distorsionar */
+            }
+        }
+
+        .contenido {
+            color: white;
+            text-align: center;
+            padding: 50px;
+            position: relative;
+            z-index: 1;
+        }
     </style>
 </head>
 <body>
