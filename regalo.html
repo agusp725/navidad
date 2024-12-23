@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -17,13 +17,13 @@
             background-position: top left; /* Posiciona el fondo en la parte superior izquierda */
             background-repeat: repeat; /* Repite el fondo en ambas direcciones */
         }
-        header {
 
-            background-color: 
+        header {
+            
             color: red;
             padding: 250px;
             text-align: center;
-           }
+        }
 
         img {
             display: block; /* Hace que las imágenes sean elementos de bloque */
@@ -41,7 +41,15 @@
             position: relative;
             z-index: 1; /* Asegura que el contenido esté encima del fondo */
         }
-         @media (max-width: 600px) {
+
+        p {
+            margin-top: 5px; /* Espacio entre el título y el texto */
+            font-size: 4em;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+
+        /* Estilo para pantallas pequeñas (móviles) */
+        @media (max-width: 600px) {
             img {
                 width: 90%; /* Las imágenes ocuparán el 90% del ancho de la pantalla */
                 max-width: none; /* Elimina el límite máximo del ancho */
@@ -50,21 +58,7 @@
             body {
                 background-size: cover; /* Hace que el fondo cubra toda la pantalla sin distorsionar */
             }
-        }
 
-        .contenido {
-            color: white;
-            text-align: center;
-            padding: 50px;
-            position: relative;
-            z-index: 1;
-        }
-         p {
-            margin-top: 20px; /* Espacio entre el título y el texto */
-            font-size: 3em;
-            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-        }
-           @media (max-width: 600px) {
             header {
                 padding: 15% 5% 5%; /* Menos espacio en pantallas pequeñas */
             }
@@ -72,6 +66,7 @@
             p {
                 font-size: 2em; /* Reducir tamaño de fuente en móviles */
             }
+        }
     </style>
 </head>
 <body>
@@ -83,10 +78,9 @@
     <img src="73bfa73f-3c60-4ae2-90ed-cb3429d0172b.jpg" alt="Imagen 2">
 
     <img src="44e1f907-6b94-4177-a2bc-7da26e59a882.jpg" alt="Imagen 3">
- <header>
-    <p>perdon por que no este aca pero bueno ya viene en camino,
-        espero que almenos te haya parecido divertido o almenos algo nuevo
-    sabes lo mucho que te amo y feliz aniversario</p>
- </header>
+
+    <header>
+        <p>Perdón por que no esté acá, pero bueno, ya viene en camino. Espero que al menos te haya parecido divertido o algo nuevo. Sabes lo mucho que te amo y ¡Feliz aniversario!</p>
+    </header>
 </body>
 </html>
